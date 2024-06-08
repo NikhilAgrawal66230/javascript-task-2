@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <script>
+        var bill, unit,x;
+        unit = parseInt(prompt("enter the no. of Unit consumed"))
+        if(unit<=50){
+            bill=unit*0.50;
+        }
+        else if(unit<=150){
+             bill=(50*0.50)+((unit-50)*0.75);
+        }
+        else if(unit<=250){
+             bill=(50*0.50)+(100*0.75)+((unit-150)*1.20);
+        }
+        else if(unit>250){
+             bill=(50*0.50)+(100*0.75)+(100*1.20)+((unit-250)*1.50);
+        }
+       else{
+        document.write("enter correct units <br>");
+       }
+      x=(20/100)*bill;
+      bill=bill+x;
+      document.write("YOUR FINAL BILL IS : Rs"+bill);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

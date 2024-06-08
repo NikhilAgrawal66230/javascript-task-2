@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a, b, c;
+        a = parseInt(prompt("enter length of first side of triangle"));
+        b = parseInt(prompt("enter length of second side of triangle"));
+        c = parseInt(prompt("enter length of third side of triangle"));
+        if (a + b > c) { 
+            if (b + c > a) {
+                if (c + a > b) {
+                    document.write("Triangle is valid" );
+                }
+                else{
+                    document.write("Triangle is Invalid");
+                }
+            }
+            else {
+                document.write( "Triangle is Invalid" );
+            }
+        }
+        else {
+            document.write( "Triangle is Invalid" );
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

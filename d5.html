@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var amount = parseInt(prompt("enter amount"))
+        var five=parseInt( amount/500);
+        var cm=amount%500;
+        var two= parseInt(cm/200) ;
+        var cm2=cm%200;
+        var one= parseInt(cm2/100) ;
+        var cm3=cm2%100;
+        var fifty= parseInt(cm3/50) ;
+        var cm4=cm3%50;
+        var twenty= parseInt(cm4/20) ; 
+        var cm5=cm4%20;
+        var ten= parseInt(cm5/10) ;
+        var cm6=cm5%10;
+        var ek= parseInt(cm6/1) ;
+
+        document.write("NO. of 500 rupee note"+five+"<br>");
+        document.write("NO. of 200 rupee note"+two+"<br>");
+        document.write("NO. of 100 rupee note"+one+"<br>");
+        document.write("NO. of 50 rupee note"+fifty+"<br>");
+        document.write("NO. of 20 rupee note"+twenty+"<br>");
+        document.write("NO. of 10 rupee note"+ten+"<br>");
+        document.write("NO. of 1 rupee coin"+ek+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s,hra,da,finals;
+        s = parseInt(prompt("enter basic salary"));
+        if(s<=10000){
+            da=(80*s)/100;
+            hra=(20*s)/100;
+        }
+        else if(s<=20000){
+            da=(90*s)/100;
+            hra=(25*s)/100; 
+        }
+        else{
+            da=(95*s)/100;
+            hra=(30*s)/100;
+        }
+        finals=(s+da+hra);
+        document.write("final salery:"+finals)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
